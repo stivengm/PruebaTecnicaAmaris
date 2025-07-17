@@ -60,7 +60,7 @@ class ItemFondoSuscrito extends StatelessWidget {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text(
-                      'Se ha vendido ${fondo.nombre} en \$ ${CurrencyFormatter.format(fondo.montoMinimo)}',
+                      'Se ha vendido ${fondo.nombre} en \$ ${CurrencyFormatter.format(fondo.valorActual ?? 0)}',
                     ),
                   ),
                 );
